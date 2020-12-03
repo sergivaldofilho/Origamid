@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Principais Tags</title>
+    <link rel="stylesheet" href="" />
+  </head>
+  <body>
+    <h1>Essas são as principais tags</h1>
+
+    <p>Primeiro parágrafo</p>
+    <p>Segundo parágrafo</p>
+
+    <h2>Outras tags importantes</h2>
+    <p>Trabalhando com bikes <strong>personalizadas</strong></p>
+    <p>Amamos nossas <strong>bikes</strong></p>
+    <a href="../design/bikcraft-design.xd">Bike 1</a>
+    <a href="http://www.google.com">Bike 2</a>
+    <a href="">Bike 3</a>
+
+    <h3>Lista de compras</h3>
+    <ul>
+      <li>Arroz</li>
+      <li>Feijão</li>
+      <li>Macarrão</li>
+      <li>Carne</li>
+      <li>Açúcar</li>
+    </ul>
+
+    <h3>Melhores Alimentos</h3>
+    <div>
+      <ol>
+        <li>Arroz</li>
+        <li>Feijão</li>
+        <li>Macarrão</li>
+        <li>Carne</li>
+        <li>Açúcar</li>
+      </ol>
+    </div>
+
+    <form action="enviar.php" method="POST" name="form">
+      <div>
+        <label for="nome">Nome *</label>
+        <input id="nome" name="nome" type="text" required />
+      </div>
+      <div>
+        <label for="email">Email *</label>
+        <input id="email" name="email" type="text" required />
+      </div>
+      <div>
+        <p>Escolha a sua bike</p>
+        <label for="retro"
+          ><input id="retro" type="checkbox" value="retro" />Retro</label
+        >
+        <label for="passeio"
+          ><input id="passeio" type="checkbox" value="passeio" />Passeio</label
+        >
+        <label for="esporte"
+          ><input id="esporte" type="checkbox" value="esporte" />Esporte</label
+        >
+      </div>
+      <div>
+        <label for="mensagem">Mensagem</label>
+        <textarea name="mensagem" id="mensagem" cols="30" rows="10"></textarea>
+      </div>
+      <button type="submit">Enviar</button>
+    </form>
+  </body>
+</html>

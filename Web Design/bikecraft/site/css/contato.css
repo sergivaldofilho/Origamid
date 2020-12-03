@@ -1,0 +1,288 @@
+/* Estilos Gerais */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+p {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+img {
+  display: block;
+}
+
+.subtitulo {
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 30px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  text-align: center;
+  color: #000000;
+  margin-bottom: 40px;
+}
+
+.subtitulo::after {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 3px;
+  background: #000000;
+  margin: 8px auto;
+}
+
+/* Header */
+.header {
+  width: 100%;
+  background: #fec63e;
+  padding: 10px 0;
+  position: fixed;
+  top: 0;
+  z-index: 10;
+}
+
+.navbar-menu {
+  text-align: right;
+}
+
+.navbar-menu ul li {
+  display: inline-block;
+  margin-left: 10px;
+  margin-top: 20px;
+}
+
+.navbar-menu ul li a {
+  color: #000000;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-size: 14px;
+  line-height: 20px;
+  padding: 10px;
+}
+
+.navbar-menu ul li a:hover {
+  color: #ffffff;
+}
+
+/* Página Produtos */
+
+.produtos {
+  margin: 60px auto;
+}
+
+.esporte,
+.retro {
+  padding-top: 640px;
+}
+
+.pg-contato {
+  width: 100%;
+  height: 160px;
+  background: url('../img/bg-contato.jpg') no-repeat center;
+  background-size: cover;
+  margin-top: 82px;
+  text-align: center;
+  padding-top: 40px;
+  color: #ffffff;
+}
+
+.pg-contato h1 {
+  font-size: 36px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.pg-contato h1::after {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 3px;
+  background: #fff;
+  margin: 5px auto;
+}
+
+/* Orçamento */
+
+.orcamento {
+  width: 100%;
+  padding: 50px 0;
+  background: #ffffff;
+  color: #000000;
+}
+
+.orcamento h3 {
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #fec63e;
+  line-height: 25px;
+  margin-bottom: 15px;
+}
+
+.orcamento-form form {
+  padding-right: 80px;
+}
+
+.orcamento-form label,
+.orcamento-dados span {
+  display: block;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 16px;
+  line-height: 25px;
+}
+
+.orcamento-form input,
+.orcamento-form textarea {
+  display: block;
+  width: 100%;
+  border: 4px solid #fec63e;
+  margin: 5px 0 10px 0;
+  padding: 7px 5px;
+  background: none;
+  color: #000000;
+  outline: none;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 14px;
+}
+
+.orcamento-form textarea {
+  height: 120px;
+}
+
+.orcamento-form button {
+  border: 4px solid #fec63e;
+  background: none;
+  color: #fec63e;
+  font-weight: bold;
+  font-size: 14px;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 5px 30px;
+  margin-top: 10px;
+}
+
+.orcamento-form button:hover {
+  background: #000000;
+}
+
+.orcamento-dados span:nth-of-type(even) {
+  margin-bottom: 30px;
+}
+
+.orcamento-dados .redes-sociais li a:hover {
+  background: #000000;
+}
+
+.orcamento-dados p {
+  margin: 10px 0;
+}
+
+.orcamento-dados ul {
+  padding-right: 80px;
+}
+
+.mapa {
+  width: 100%;
+  padding: 0 0 50px 0;
+}
+
+/* Quebra */
+
+.quebra {
+  width: 100%;
+  height: 200px;
+  background: url(../img/bg-footer.jpg) no-repeat center;
+  background-size: cover;
+  color: #ffffff;
+  text-align: center;
+  padding-top: 40px;
+}
+
+.quebra .quote-externo {
+  max-width: 300px;
+}
+
+.quote-externo p {
+  font-style: italic;
+}
+
+.quote-externo p:before,
+.quote-externo p:after {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 3px;
+  background: #ffffff;
+  margin: 14px auto 10px auto;
+}
+
+.quote-externo cite {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  letter-spacing: 0.1em;
+}
+
+/* Footer */
+
+.footer {
+  width: 100%;
+  background: #000000;
+  color: #ffffff;
+}
+
+.footer h3 {
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 25px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin-top: 20px;
+  color: #fec63e;
+}
+
+.footer-historia {
+  padding-right: 50px;
+}
+
+.footer h3::after {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 3px;
+  background: #fec63e;
+  margin: 5px 0 0 0;
+}
+
+.footer ul {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.redes-sociais li {
+  display: inline-block;
+  margin-left: 0;
+  margin-right: 20px;
+}
+
+.redes-sociais li a {
+  width: 50px;
+  height: 50px;
+  border: 3px solid #fec63e;
+  display: block;
+  margin-left: 2px;
+  padding: 6px;
+}
+
+.redes-sociais li a:hover {
+  background: #ffffff;
+}
+
+.copyright {
+  width: 100%;
+  background: #fec63e;
+  padding: 10px 0;
+}

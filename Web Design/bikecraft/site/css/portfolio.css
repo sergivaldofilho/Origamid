@@ -1,0 +1,466 @@
+/* Estilos Gerais */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+p {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+img {
+  display: block;
+}
+
+.btn {
+  border: 3px solid #fec63e;
+  padding: 10px 30px;
+  color: #fec63e;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 20px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+.btn:hover {
+  color: #ffffff;
+  border-color: #ffffff;
+}
+
+.btn.btn-preto:hover {
+  color: #000000;
+  border-color: #000000;
+}
+
+.subtitulo {
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 30px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  text-align: center;
+  color: #000000;
+  margin-bottom: 40px;
+}
+
+.subtitulo::after {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 3px;
+  background: #000000;
+  margin: 8px auto;
+}
+
+/* Header */
+.header {
+  width: 100%;
+  background: #fec63e;
+  padding: 10px 0;
+  position: fixed;
+  top: 0;
+  z-index: 10;
+}
+
+.navbar-menu {
+  text-align: right;
+}
+
+.navbar-menu ul li {
+  display: inline-block;
+  margin-left: 10px;
+  margin-top: 20px;
+}
+
+.navbar-menu ul li a {
+  color: #000000;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-size: 14px;
+  line-height: 20px;
+  padding: 10px;
+}
+
+.navbar-menu ul li a:hover {
+  color: #ffffff;
+}
+
+/* Introdução */
+
+.pg-portfolio {
+  width: 100%;
+  height: 160px;
+  background: url('../img/bg-portfolio.jpg') no-repeat center;
+  background-size: cover;
+  margin-top: 82px;
+  text-align: center;
+  padding-top: 40px;
+  color: #ffffff;
+}
+
+.pg-portfolio h1 {
+  font-size: 36px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.pg-portfolio h1::after {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 3px;
+  background: #fff;
+  margin: 5px auto;
+}
+
+.introducao-portfolio {
+  text-align: center;
+  padding: 12px 0 24px 0;
+  color: #000000;
+}
+
+.quote-externo {
+  max-width: 320px;
+  margin: 0 auto;
+}
+
+.quote-externo p {
+  font-style: italic;
+}
+
+.quote-externo p:before,
+.quote-externo p:after {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 3px;
+  background: #ffffff;
+  margin: 14px auto 10px auto;
+}
+
+.introducao-portfolio .quote-externo p:before,
+.introducao-portfolio .quote-externo p:after {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 3px;
+  background: #000000;
+  margin: 14px auto 10px auto;
+}
+
+.quote-externo cite {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  letter-spacing: 0.1em;
+}
+
+/* Produtos */
+
+.produtos {
+  padding: 45px 0;
+}
+
+.produtos_lista li {
+  background: #fec63e;
+  text-align: center;
+}
+
+/* Necessário para centralizar imagens */
+.produtos_lista li img {
+  margin: 0 auto;
+}
+
+.produtos_lista li h3 {
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 25px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin-top: 20px;
+}
+
+.produtos_lista li h3::after {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 3px;
+  background: #000000;
+  margin: 5px auto;
+}
+
+.produtos_lista li p {
+  padding: 10px 20px 20px 20px;
+}
+
+.produtos_icone {
+  background: #000000;
+  padding: 20px;
+  text-align: center;
+}
+
+.call {
+  text-align: center;
+  padding-top: 40px;
+  clear: both;
+}
+
+.call p {
+  margin-bottom: 20px;
+}
+
+/* Portfólio */
+
+.portfolio {
+  width: 100%;
+  padding: 45px 0;
+  background: #000000;
+}
+
+.portfolio .subtitulo {
+  color: #fec63e;
+}
+
+.portfolio .subtitulo::after {
+  background: #fec63e;
+}
+
+.portfolio .call p {
+  color: #fec63e;
+}
+
+.portfolio_lista li:last-child {
+  margin-top: 20px;
+}
+
+.portfolio .btn {
+  color: #ffffff;
+  border-color: #ffffff;
+}
+
+.portfolio .btn:hover {
+  color: #fec63e;
+  border-color: #fec63e;
+}
+
+/* Qualidade */
+
+.qualidade {
+  padding: 45px 0;
+}
+
+.qualidade::after {
+  content: '';
+  width: 634px;
+  height: 83px;
+  display: block;
+  background: url(../img/linhas.svg) no-repeat center;
+  position: absolute;
+  top: 190px;
+  right: 163px;
+  z-index: -1;
+}
+
+.qualidade img {
+  margin: 0 auto;
+}
+
+.qualidade_lista li {
+  text-align: center;
+  padding: 0 40px;
+}
+
+.qualidade_lista li h3 {
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 25px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin-top: 30px;
+}
+
+.qualidade_lista li h3::after {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 3px;
+  background: #000000;
+  margin: 5px auto;
+}
+
+/* Quebra */
+
+.quebra {
+  width: 100%;
+  height: 200px;
+  background: url(../img/bg-footer.jpg) no-repeat center;
+  background-size: cover;
+  color: #ffffff;
+  text-align: center;
+  padding-top: 40px;
+}
+
+.quebra .quote-externo {
+  max-width: 300px;
+}
+
+/* Footer */
+
+.footer {
+  width: 100%;
+  background: #000000;
+  color: #ffffff;
+}
+
+.footer h3 {
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 25px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin-top: 20px;
+  color: #fec63e;
+}
+
+.footer-historia {
+  padding-right: 50px;
+}
+
+.footer h3::after {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 3px;
+  background: #fec63e;
+  margin: 5px 0 0 0;
+}
+
+.footer ul {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.redes-sociais li {
+  display: inline-block;
+  margin-left: 0;
+  margin-right: 20px;
+}
+
+.redes-sociais li a {
+  width: 50px;
+  height: 50px;
+  border: 3px solid #fec63e;
+  display: block;
+  margin-left: 2px;
+  padding: 6px;
+}
+
+.redes-sociais li a:hover {
+  background: #ffffff;
+}
+
+.copyright {
+  width: 100%;
+  background: #fec63e;
+  padding: 10px 0;
+}
+
+/* Pagina Sobre */
+
+.pg-sobre {
+  width: 100%;
+  height: 160px;
+  background: url('../img/bg-sobre.jpg') no-repeat center;
+  background-size: cover;
+  margin-top: 82px;
+  text-align: center;
+  padding-top: 40px;
+  color: #ffffff;
+}
+
+.pg-sobre h1 {
+  font-size: 36px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.pg-sobre h1::after {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 3px;
+  background: #fff;
+  margin: 5px auto;
+}
+
+.pg-sobre p {
+  padding-top: 5px;
+}
+
+.equipe-bikcraft {
+  margin-top: 40px;
+}
+
+.historia h3 {
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 25px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin-top: 40px;
+  color: #000000;
+}
+
+.historia h3::after {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 3px;
+  background: #000000;
+  margin: 5px 0;
+}
+
+.historia ul {
+  margin-top: 15px;
+}
+
+.historia .hist-miss-vis {
+  padding-right: 100px;
+}
+
+.pg-sobre-qualidade {
+  margin-bottom: 120px;
+}
+
+/* Produtos */
+
+.pg-produtos {
+  width: 100%;
+  height: 160px;
+  background: url('../img/bg-produtos.jpg') no-repeat center;
+  background-size: cover;
+  margin-top: 82px;
+  text-align: center;
+  padding-top: 40px;
+  color: #ffffff;
+}
+
+.pg-produtos h1 {
+  font-size: 36px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.pg-produtos h1::after {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 3px;
+  background: #fff;
+  margin: 5px auto;
+}
